@@ -1,9 +1,9 @@
 @use 'common';
 
-
 .MainSlide {
     position: relative;
-    padding: 10rem 0 0;
+    transform: translateY(-8rem);
+    height: calc(100vh - 18rem);
 
     .slick-track {
         transition-duration: 0.5ms;
@@ -81,6 +81,8 @@
                 font-size: 0;
                 border: none;
                 outline: none;
+
+
             }
 
             &.slick-active button {
