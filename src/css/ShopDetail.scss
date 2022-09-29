@@ -5,13 +5,12 @@
     padding: 10rem 0;
 
     .inner {
-        display: flex;
+        display: grid;
         flex-wrap: wrap;
         gap: 5rem 3rem; // 아래 위
+        grid-template-columns: repeat(5, 1fr);
 
-        figure {
-            flex: 1 0 15%; // <'flex-grow'> <'flex-shrink'> <'flex-basis'>
-        }
+        figure {}
 
         .box {
             margin: 0 0 2rem 0;
