@@ -6,12 +6,14 @@ import '../css/Main.scss'
 import MainCategory from '../components/MainCategory';
 import MainProuctSlide from '../components/MainProuctSlide';
 
+
 const Main = ({ shopList }) => {
     return (
         <>
             <MainSlide />
-            <MainProuctSlide shopList={shopList} category={'pencil'} />
-            <MainTab shopList={shopList} />
+            <MainProuctSlide shopList={shopList} category={'pencil'} tit={'BEST PRODUCT'} des={'피몽쉐 마인드풀 라운지 BEST PRODUCT'} arrow={true} dots={true} />
+            <MainProuctSlide shopList={shopList} category={'liquid'} tit={'NEW PRODUCT'} des={'피몽쉐 마인드풀 라운지 new PRODUCT'} arrow={true} dots={false} bg />
+            <MainTab shopList={shopList} arrow={true} dots={false} />
             <MainCategory shopList={shopList} category={'pencil'} />
             <MainCategory shopList={shopList} category={'liquid'} />
             <MainCategory shopList={shopList} category={'powder'} />

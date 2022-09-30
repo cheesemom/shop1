@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const List = ({ shopList }) => {
+
     return (
         <section className='shopList'>
             <div className='inner'>

@@ -5,14 +5,15 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 
 
-const CategorySlider = ({ shopList, category }) => {
+const CategorySlider = ({ shopList, category, arrow, dots }) => {
     const Mainlist = shopList.filter(it => category === it.cate);
     return (
         <section className='shopList-- sc'>
             <div className='inner'>
                 <Slider
-                    arrows={false}
+                    arrows={arrow}
                     slidesToShow={5}
+                    dots={dots}
                 >
                     {
                         Mainlist.map(it => {
